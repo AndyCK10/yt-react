@@ -1,0 +1,51 @@
+#side {
+    overflow: hidden;
+    max-height: 100%;
+    padding: 12px;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    overflow-y: auto;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+    /* scrollbar-color: var(--yt-spec-text-secondary) transparent; */
+    /* scrollbar-color: #606060 transparent; */
+}
+#side:hover {
+    /* scrollbar-color: var(--yt-spec-icon-disabled) transparent; */
+    scrollbar-color: #909090 transparent;
+}
+#side::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+#side::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+#side::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+.-side-pmr {
+    display: grid;
+    grid-auto-rows: 40px;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.-side-pmr .-item {
+    display: grid;
+    grid-template-columns: 48px auto;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+.-side-pmr .-item:hover {
+    background-color: #f2f2f2;
+}
+.-side-pmr .-text {
+    font-size: 1.4rem;
+    line-height: 10px;
+}
