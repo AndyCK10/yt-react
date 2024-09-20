@@ -2,14 +2,14 @@ import { useEffect } from "react";
 
 function CardVideo({ content }) {
   useEffect(() => {
-    console.log(content);
+    // console.log(content);
   }, []);
 
   const convertPublishDate = (date) => {
     const publish_date = new Date(date);
     const today = new Date();
     const difference_time = today.getTime() - publish_date.getTime();
-    const difference_day = Math.round(difference_time / 86400000);
+    const difference_day = Math.round(difference_time / 86400000); // หาจำนวนวัน
     return difference_day;
   };
 
@@ -46,7 +46,7 @@ function CardVideo({ content }) {
           <div className="-title">{content.video_title}</div>
           <div className="-channel">{content.channel_name}</div>
           <div className="-view">
-            การดู {convertView(content.view_count)}.{" "}
+            การดู {convertView(content.view_count)}. {" "}
             {convertPublishDate(content.video_created_at)} วันที่ผ่านมา
           </div>
         </div>

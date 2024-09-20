@@ -1,5 +1,6 @@
 import React from "react";
 import "./NevStyle.css";
+import SearchBox from "../Search/SearchBox";
 
 function Nav() {
   return (
@@ -12,15 +13,7 @@ function Nav() {
           <img src="https://via.placeholder.com/97x20" alt="" />
         </div>
       </div>
-      <div className="-center">
-        <div className="-search">
-          <div className="-search-box">
-            <input type="text" className="-search-input" />
-          </div>
-          <div className="-btn">0</div>
-        </div>
-        <div className="-voice"></div>
-      </div>
+      <SearchBox></SearchBox>
       <div className="-end">
         <div className="-end-item">x</div>
         <div className="-end-item">x</div>

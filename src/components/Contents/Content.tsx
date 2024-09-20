@@ -17,7 +17,18 @@ function Content() {
 
       setVideos(json);
     };
+
+    const fetchShorts = async () => {
+      const data = await fetch("http://localhost:3000/short");
+      // console.log(data);
+      const json = await data.json();
+      // console.log(json);
+
+      setShorts(json);
+    };
+
     fetchVideos();
+    fetchShorts();
   }, []);
   return (
     <section id="content">
@@ -150,7 +161,7 @@ function Content() {
       <section id="shorts">
         <div className="-section-title">[] Shorts</div>
         <div className="short-wrap">
-          {videos.map((video, index) => (
+          {shorts.map((video, index) => (
             <CardShort key={index} content={video}></CardShort>
           ))}
           <div className="short">

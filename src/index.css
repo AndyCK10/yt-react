@@ -38,10 +38,12 @@ img {
 
 #nav {
   grid-area: n;
+  overflow: auto;
 }
 #side {
   grid-area: s;
 }
 #content {
   grid-area: c;
+  overflow: auto;
 }

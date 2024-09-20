@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 function CardShort({ content }) {
   useEffect(() => {
-    console.log(content);
+    // console.log(content);
   }, []);
 
   const convertPublishDate = (date) => {
@@ -44,7 +44,7 @@ function CardShort({ content }) {
           <div className="-channel">{content.channel_name}</div>
           <div className="-view">
             การดู {convertView(content.view_count)}.{" "}
-            {convertPublishDate(content.video_created_at)} วันที่ผ่านมา
+            {/* {convertPublishDate(content.video_created_at)} วันที่ผ่านมา */}
           </div>
         </div>
       </div>
