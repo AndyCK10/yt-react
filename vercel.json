@@ -1,0 +1,15 @@
+{
+    "verson": 2,
+    "builds": [
+        {
+            "src": "src/main.jsx",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "use": "src/main.jsx"
+        }
+    ]
+}
