@@ -1,5 +1,5 @@
 {
-    "verson": 2,
+    "verson": 7,
     "builds": [
         {
             "src": "src/main.jsx",
